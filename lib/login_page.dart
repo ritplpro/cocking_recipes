@@ -1,4 +1,6 @@
+import 'package:cocking_recipes/forgot_password.dart';
 import 'package:cocking_recipes/main_menu.dart';
+import 'package:cocking_recipes/signup_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -93,7 +95,10 @@ class _LoginPageState extends State<LoginPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                TextButton(onPressed: (){}, child: Text('forgot Password ?')),
+                TextButton(onPressed: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=>ForgotPassword()));
+                }, child: Text('forgot Password ?')),
               ],
             ),
             SizedBox(height: 15),
@@ -199,7 +204,9 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('Don`t have an account?'),
-                TextButton(onPressed: (){}, child: Text('Sign up now'))
+                TextButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SignupPage()));
+                }, child: Text('Sign up now'))
               ],
             ),
 

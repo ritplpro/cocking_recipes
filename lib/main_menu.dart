@@ -125,7 +125,7 @@ class _MainMenuState extends State<MainMenu> {
                       ),),
                       SizedBox(height: 10),
                       Text('Chicken Salad',style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w700
                       ),),
                       SizedBox(height: 20),
